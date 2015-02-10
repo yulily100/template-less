@@ -1,19 +1,22 @@
 {
-  "name": "gulp",
-  "version": "3.8.11",
-  "description": "gulp-test",
+  "name": "gulptest",
+  "version": "0.0.0",
+  "description": "Gulp入門用テストプロジェクト",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "gulp-connect": "^2.2.0",
-    "gulp-ruby-sass": "^1.0.0-alpha.3"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/marcofranssen/NodeJsPackageExample.git"
+    "url": "git://github.com/yulily100/template-less.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yulily100/template-less/issues"
+  },
+  "homepage": "https://github.com/yulily100/template-less",
+  "devDependencies": {
+    "gulp": "^3.8.11"
   }
 }
