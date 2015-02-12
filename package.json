@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/yulily100/template-less",
   "devDependencies": {
-    "gulp": "^3.8.11"
+    "gulp": "^3.8.11",
+    "gulp-ruby-sass": "^1.0.0-alpha.3",
+    "gulp-connect": "^2.2.0"
   }
 }
