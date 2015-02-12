@@ -17,6 +17,13 @@ gulp.task("less", function() {
     .pipe(browser.reload({stream:true}));
 });
 
+//htmlも見る
+gulp.task("html", function() {
+  gulp.src("./*.html")
+    .pipe(browser.reload({stream:true}));
+});
+
 gulp.task("default",['server'], function() {
   gulp.watch("less/**/*.less",["less"]);
+  gulp.watch(["./*.html"],["html"]);
 });
