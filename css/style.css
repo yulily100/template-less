@@ -1,0 +1,57 @@
+body {
+  background: #f5f5f5;
+  font-size: 16px;
+  color: #666666;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+h1 {
+  color: red;
+  background: #fff;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  text-align: center;
+}
+.section-inner {
+  width: 95%;
+  margin: 0 auto;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.header {
+  background: #edf4f4;
+}
+.page-title {
+  font-size: 140%;
+  color: #4d4d4d;
+}
+.section-title {
+  font-size: 120%;
+  color: #4d4d4d;
+}
+.blogger {
+  text-align: left;
+}
+.blogger li {
+  display: block;
+  border-radius: 3px;
+  border: 2px solid #dddddd;
+}
+.select-design {
+  background: #edf4f4;
+}
+.footer {
+  background: #edf4f4;
+}

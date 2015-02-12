@@ -1,26 +1,22 @@
-var gulp,connect;
-    gulp = require('gulp');
-    connect = require('gulp-connect');
+var gulp = require("gulp");
+var less = require("gulp-less");
+var browser = require("browser-sync");
 
-
-//ローカルサーバー
-gulp.task('connectDev',function(){
-  connect.server({
-    root: ['./'],   //ルートディレクトリ
-    port: 8000,     //ポート番号
-    livereload: true
-  });
+gulp.task("server", function() {
+    browser({
+        server: {
+            baseDir: "./"
+        }
+    });
 });
 
-//htmlタスク
-gulp.task('html',function(){
-  gulp.src('./*.html')          //実行するファイル
-    .pipe(connect.reload());    //ブラウザの更新
+gulp.task("less", function() {
+  gulp.src("less/**/*less")
+    .pipe(less())
+    .pipe(gulp.dest("./css"))
+    .pipe(browser.reload({stream:true}));
 });
 
-//ファイルの監視
-gulp.task('watch',function(){
-  gulp.watch(['./*.html'],['html']);    //htmlファイルを監視
+gulp.task("default",['server'], function() {
+  gulp.watch("less/**/*.less",["less"]);
 });
-
-gulp.task('default',['connectDev','watch']);
