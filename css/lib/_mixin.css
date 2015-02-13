@@ -1,0 +1,117 @@
+/*
+LESS Mixins
+*/
+/* box properties */
+.clearfix {
+  display: block;
+  *zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+.inline-block {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.ellipsis {
+  white-space: nowrap;
+  -webkit-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/* text properties */
+.font-default {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+/* CSS3 properties */
+.border-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.nofloat {
+  float: none;
+}
+.clear {
+  clear: both;
+}
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
+}
+.nodisplay {
+  display: none;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.static {
+  position: static;
+}
+.fixed {
+  position: fixed;
+}
+.margin0 {
+  margin: 0 !important;
+}
+.padding0 {
+  padding: 0 !important;
+}
+.bold {
+  font-weight: bold;
+}
+.normal {
+  font-weight: normal;
+  font-style: normal;
+}
+.thin {
+  font-weight: 300;
+}
+.italic {
+  font-style: italic;
+}
+.nodeco {
+  text-decoration: none;
+}
+.underline {
+  text-decoration: underline;
+}
+.nolist {
+  list-style-type: none;
+}
+.disc {
+  list-style-type: disc;
+}
+.circle {
+  list-style-type: circle;
+}
+.textleft {
+  text-align: left;
+}
+.textright {
+  text-align: right;
+}
