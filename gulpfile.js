@@ -1,6 +1,7 @@
 var gulp = require("gulp");
 var less = require("gulp-less");
 var browser = require("browser-sync");
+var plumber = require("gulp-plumber");
 
 gulp.task("server", function() {
     browser({
@@ -13,6 +14,7 @@ gulp.task("server", function() {
 //less
 gulp.task("less", function() {
   gulp.src("less/**/*less")
+    .pipe(plumber())
     .pipe(less())
     .pipe(gulp.dest("./css"))
     .pipe(browser.reload({stream:true}));
