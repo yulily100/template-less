@@ -6,16 +6,15 @@ LESS Mixins
 
 
 .clearfix {
-    display: block;
-    *zoom: 1;
-  	&:after {
-        display: block;
-        visibility: hidden;
-        font-size: 0;
-        height: 0;
-        clear: both;
-        content: ".";
-  	}
+  *zoom: 1;
+  &:before,
+  &:after {
+      display: table;
+      content: " ";
+  }
+  &:after {
+      clear: both;
+  }
 }
 
 .inline-block {

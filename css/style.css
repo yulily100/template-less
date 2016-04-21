@@ -3,16 +3,15 @@ LESS Mixins
 */
 /* box properties */
 .clearfix {
-  display: block;
   *zoom: 1;
 }
+.clearfix:before,
 .clearfix:after {
-  display: block;
-  visibility: hidden;
-  font-size: 0;
-  height: 0;
+  display: table;
+  content: " ";
+}
+.clearfix:after {
   clear: both;
-  content: ".";
 }
 .inline-block {
   display: inline-block;
@@ -429,83 +428,139 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/*
-LESS Variables
-Description: for Hatena Blog Admin
-Author: Hatena Blog Team
-Version: 1.0
-*/
-/* Background color */
-/* Light Gray Background color */
-/* dark background color */
-/* Base text color */
-/* light text color */
-/* 標準リンク色 */
-/* リンクのhover */
-/* グレーの標準ボタン色 */
-/* 標準ボタンの文字色 */
-/* 青い標準ボタン色  */
-/* 青い標準ボタン色(hover)  */
-/* Register系の緑色ボタン */
-/* Register系の緑色ボタン（hover） */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+.clearfix:after {
+  clear: both;
+}
+.l-container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 1240px) {
+  .l-container {
+    width: 1170px;
+  }
+}
+@media (max-width: 1024px) {
+  .l-container {
+    width: 720px;
+  }
+}
+@media (max-width: 767px) {
+  .l-container {
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+.l-row {
+  margin-left: -15px;
+  margin-right: -15px;
+  *zoom: 1;
+}
+.l-row:before,
+.l-row:after {
+  display: table;
+  content: " ";
+}
+.l-row:after {
+  clear: both;
+}
+.l-row:before,
+.l-row:after {
+  display: table;
+  content: " ";
+}
+.l-row:after {
+  clear: both;
+}
+@media (max-width: 767px) {
+  .l-row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+@media (max-width: 480px) {
+  .l-row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+[class*="l-span"] {
+  float: left;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 1px;
+  box-sizing: border-box;
+}
+@media (max-width: 480px) {
+  [class*="l-span"] {
+    float: none;
+    padding: 0;
+    width: auto !important;
+    margin-bottom: 1em;
+  }
+}
+.l-span1 {
+  width: 8.33333333%;
+}
+.l-span2 {
+  width: 16.66666667%;
+}
+.l-span3 {
+  width: 25%;
+}
+.l-span4 {
+  width: 33.33333333%;
+}
+.l-span5 {
+  width: 41.66666667%;
+}
+.l-span6 {
+  width: 50%;
+}
+.l-span7 {
+  width: 58.33333333%;
+}
+.l-span8 {
+  width: 66.66666667%;
+}
+.l-span9 {
+  width: 75%;
+}
+.l-span10 {
+  width: 83.33333333%;
+}
+.l-span11 {
+  width: 91.66666667%;
+}
 body {
-  background: #f5f5f5;
-  font-size: 16px;
-  color: #666666;
+  font-family: Avenir, "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #333333;
 }
-h1,
-h2,
-h3,
-p {
-  margin: 0;
+a {
+  transition: all .2s;
 }
-h1 {
-  color: red;
-  background: #fff;
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  text-decoration: none;
 }
-.container {
-  width: 100%;
-  margin: 0 auto;
-  background: #fff;
-  text-align: center;
-}
-.section-inner {
-  width: 95%;
-  margin: 0 auto;
-}
-ul {
-  margin: 0;
-  padding: 0;
-}
-li {
-  list-style: none;
-}
-.header {
-  background: #edf4f4;
-}
-.page-title {
-  font-size: 140%;
-  color: #4d4d4d;
-}
-.section-title {
-  font-size: 120%;
-  color: #4d4d4d;
-}
-.blogger {
-  text-align: left;
-}
-.blogger li {
-  display: block;
-  border-radius: 3px;
-  border: 2px solid #dddddd;
-}
-.select-design {
-  background: #edf4f4;
-}
-.footer {
-  background: #edf4f4;
-}
-/* Media Queries - Retina Display */
-/* Media Queries - Tablet */
-/* Media Queries - Small Tablet & Smartphone */
-/* Media Queries - Smartphone */

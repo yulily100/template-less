@@ -3,16 +3,15 @@ LESS Mixins
 */
 /* box properties */
 .clearfix {
-  display: block;
   *zoom: 1;
 }
+.clearfix:before,
 .clearfix:after {
-  display: block;
-  visibility: hidden;
-  font-size: 0;
-  height: 0;
+  display: table;
+  content: " ";
+}
+.clearfix:after {
   clear: both;
-  content: ".";
 }
 .inline-block {
   display: inline-block;
