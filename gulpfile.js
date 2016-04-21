@@ -16,6 +16,7 @@ gulp.task("less", function() {
   gulp.src("less/**/*less")
     .pipe(plumber())
     .pipe(less())
+    .pipe(autoprefixer())
     .pipe(gulp.dest("./css"))
     .pipe(browser.reload({stream:true}));
 });
