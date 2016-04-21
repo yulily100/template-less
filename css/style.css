@@ -361,7 +361,7 @@ table {
 .l-row:before,
 .l-row:after {
   display: table;
-  content: " ";
+  content: "";
 }
 .l-row:after {
   clear: both;
@@ -432,7 +432,7 @@ table {
 .clearfix:before,
 .clearfix:after {
   display: table;
-  content: " ";
+  content: "";
 }
 .clearfix:after {
   clear: both;
@@ -453,19 +453,19 @@ table {
     width: 100%;
   }
 }
-.f-left {
+.f-right {
   float: right;
 }
 @media (max-width: 767px) {
-  .f-left {
+  .f-right {
     float: none;
     width: 100%;
   }
 }
 body {
-  font-family: Avenir, "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   -webkit-font-smoothing: antialiased;
-  color: #333333;
+  color: #333;
 }
 a {
   transition: all .2s;
