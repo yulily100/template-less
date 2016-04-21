@@ -1,7 +1,40 @@
-@import "lib/_mixin";
 @import "lib/_normalize";
 @import "lib/_variable";
 @import "lib/_grid";
+
+// mixin
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: " ";
+}
+&:after {
+    clear: both;
+  }
+}
+.ellipsis {
+  white-space: nowrap;
+  -webkit-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.f-left {
+  float: left;
+  @media @mq-sm {
+    float: none;
+    width: 100%;
+  }
+}
+.f-left {
+  float: right;
+  @media @mq-sm {
+    float: none;
+    width: 100%;
+  }
+}
 
 // Common
 body {
