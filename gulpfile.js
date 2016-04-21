@@ -1,6 +1,6 @@
 var gulp = require("gulp");
 var less = require("gulp-less");
-var autoprefixer = require("gulp-autoprefixer");
+//var autoprefixer = require("gulp-autoprefixer");
 var browser = require("browser-sync");
 var plumber = require("gulp-plumber");
 
@@ -17,7 +17,7 @@ gulp.task("less", function() {
   gulp.src("less/**/*less")
     .pipe(plumber())
     .pipe(less())
-    .pipe(autoprefixer())
+    //.pipe(autoprefixer())
     .pipe(gulp.dest("./css"))
     .pipe(browser.reload({stream:true}));
 });
