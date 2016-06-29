@@ -18,11 +18,12 @@
   "homepage": "https://github.com/yulily100/template-less",
   "devDependencies": {
     "browser-sync": "^2.0.1",
+    "es6-promise": "^3.1.2",
     "gulp": "^3.8.11",
-    "gulp-less": "^3.0.0",
-    "gulp-plumber": "^0.6.6",
     "gulp-autoprefixer": "^3.1.0",
+    "gulp-less": "^3.0.0",
     "gulp-notify": "^2.2.0",
-    "es6-promise": "^3.1.2"
+    "gulp-pleeease": "^2.0.2",
+    "gulp-plumber": "^0.6.6"
   }
 }
