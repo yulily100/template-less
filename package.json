@@ -1,0 +1,29 @@
+{
+  "name": "gulp-less",
+  "version": "0.0.0",
+  "description": "less用のタスクランナー",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yulily100/template-less.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yulily100/template-less/issues"
+  },
+  "homepage": "https://github.com/yulily100/template-less",
+  "devDependencies": {
+    "browser-sync": "^2.0.1",
+    "es6-promise": "^3.1.2",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-less": "^3.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-plumber": "^0.6.6"
+  }
+}
